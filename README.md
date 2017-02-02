@@ -1,2 +1,2 @@
 # CATAM
-Mathematical modelling in C
+Mathematical modelling in C.
