@@ -187,7 +187,7 @@ if (abs(Tx[J]-ca)>0.5)
   {for (i=J+1;i<ra;i++) { 
     if (abs(Tx[i]-Tx[J])<tiny) {
       for (j=0;j<ca;j++) {
-	TXa[i][j]=(TXa[i][j]-TXa[J][j]+p)%p;
+    TXa[i][j]=(TXa[i][j]-TXa[J][j]+p)%p;
    }
    }
    }
@@ -259,7 +259,7 @@ if (abs(Tx[J]-ca)>0.5)
     int a;
     a=Xda[i][Sa[j]];
     for (k=0;k<ca;k++) {
-	 int t;
+     int t;
          t=Sa[j];  
          Ya[j][k]=Xda[j][k]*a;
          Xda[i][k]=(Xda[i][k]-Ya[j][k]+p)%p;
@@ -401,7 +401,7 @@ if (abs(Tx[J]-cb)>0.5)
   {for (i=J+1;i<rb;i++) { 
     if (abs(Tx[i]-Tx[J])<tiny) {
       for (j=0;j<cb;j++) {
-	TXb[i][j]=(TXb[i][j]-TXb[J][j]+p)%p;
+    TXb[i][j]=(TXb[i][j]-TXb[J][j]+p)%p;
    }
    }
    }
@@ -473,7 +473,7 @@ if (abs(Tx[J]-cb)>0.5)
     int a;
     a=Xdb[i][Sb[j]];
     for (k=0;k<cb;k++) {
-	 int t;
+     int t;
          t=Sb[j];  
          Yb[j][k]=Xdb[j][k]*a;
          Xdb[i][k]=(Xdb[i][k]-Yb[j][k]+p)%p;
@@ -616,7 +616,7 @@ for (i=0;i<20;i++) {
   {for (i=J+1;i<20;i++) { 
     if (abs(Tx[i]-Tx[J])<tiny) {
       for (j=0;j<ca;j++) {
-	TSum[i][j]=(TSum[i][j]-TSum[J][j]+p)%p;
+    TSum[i][j]=(TSum[i][j]-TSum[J][j]+p)%p;
    }
    }
    }
@@ -745,7 +745,7 @@ if (abs(Tx[J]-ca)>0.5)
   {for (i=J+1;i<20;i++) { 
     if (abs(Tx[i]-Tx[J])<tiny) {
       for (j=0;j<ca;j++) {
-	TXs[i][j]=(TXs[i][j]-TXs[J][j]+p)%p;
+    TXs[i][j]=(TXs[i][j]-TXs[J][j]+p)%p;
    }
    }
    }
@@ -800,7 +800,7 @@ if (abs(Tx[J]-ca)>0.5)
     int a;
     a=Sumod[i][Ss[j]];
     for (k=0;k<ca;k++) {
-	 int t;
+     int t;
          t=Ss[j];
          Ys[j][k]=Sumod[j][k]*a;
          Sumod[i][k]=(Sumod[i][k]-Ys[j][k]+p)%p;

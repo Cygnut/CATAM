@@ -92,7 +92,7 @@ int MainCL(void)
     if (!RkfCL(4,aberr,relerr,&t,&dt,dtmin,F,x,xdot,&nleft)) {
       printf("\n\nEnding on Use %i: Criteria for accurate\n RKf use falls outside\n of tolerances :(\n",use+1);
       HaltCL();
-	}
+    }
     if (nres<1000) {
       xdata[nres]=x[0];
       ydata[nres]=x[1];

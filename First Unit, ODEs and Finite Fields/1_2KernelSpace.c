@@ -137,7 +137,7 @@ if (abs(Tx[J]-c)>0.5)
   {for (i=J+1;i<r;i++) { 
     if (abs(Tx[i]-Tx[J])<tiny) {
       for (j=0;j<c;j++) {
-	TX[i][j]=(TX[i][j]-TX[J][j]+p)%p;
+    TX[i][j]=(TX[i][j]-TX[J][j]+p)%p;
    }
    }
    }
@@ -192,7 +192,7 @@ if (abs(Tx[J]-c)>0.5)
     int a;
     a=Xd[i][S[j]];
     for (k=0;k<c;k++) {
-	 int t;
+     int t;
          t=S[j];
          Y[j][k]=Xd[j][k]*a;
          Xd[i][k]=(Xd[i][k]-Y[j][k]+p)%p;

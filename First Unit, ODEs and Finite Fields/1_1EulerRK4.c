@@ -27,7 +27,7 @@ do
     switch(opt)
       {
       case 1:
-	printf("By Euler's Method:\n\n");
+    printf("By Euler's Method:\n\n");
      for (i=1;i<n;i++) {
     y[i]=y[i-1]+h*dydx(x[i-1],y[i-1]);
     E[i]=y[i]-t[i];

@@ -66,7 +66,7 @@ int MainCL(void)
     if (!RkfCL(4,aberr,relerr,&t,&dt,dtmin,F,x,xdot,&nleft)) {
       printf("Falls outside of tolerances :(");
       HaltCL();
-	}
+    }
     if (nres<1000) {
       xdata[nres]=x[0];
       ydata[nres]=x[1];
